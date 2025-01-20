@@ -1,0 +1,161 @@
+<?xml version="1.0"?>
+<!-- https://developer.adobe.com/commerce/php/development/payments-integrations/ -->
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Store:etc/config.xsd">
+    <default>
+        <payment>
+            <xpanse_card>
+                <payment_action>authorize_capture</payment_action><!-- You can use another methor like capture  -->
+                <model>XpanseCardFacade</model>
+                <can_use_checkout>1</can_use_checkout>
+                <can_capture>1</can_capture>
+                <can_refund>1</can_refund>
+                <can_refund_partial_per_invoice>1</can_refund_partial_per_invoice>
+                <can_get_saved_payments>1</can_get_saved_payments>
+                <active>1</active>
+                <title>Card Payment</title>
+                <order_status>pending_payment</order_status><!-- set default order status-->
+                <env>sandbox</env>
+                <sandbox_public_key backend_model="Magento\Config\Model\Config\Backend\Encrypted" />
+                <sandbox_secret_key backend_model="Magento\Config\Model\Config\Backend\Encrypted" />
+                <public_key backend_model="Magento\Config\Model\Config\Backend\Encrypted" />
+                <secret_key backend_model="Magento\Config\Model\Config\Backend\Encrypted" />
+            </xpanse_card>
+            <xpanse_paypal>
+                <payment_action>authorize_capture</payment_action><!-- You can use another methor like capture  -->
+                <model>XpansePaypalFacade</model>
+                <can_use_checkout>1</can_use_checkout>
+                <can_capture>1</can_capture>
+                <can_refund>1</can_refund>
+                <can_refund_partial_per_invoice>1</can_refund_partial_per_invoice>
+                <can_get_saved_payments>1</can_get_saved_payments>
+                <active>1</active>
+                <title>Paypal</title>
+                <order_status>pending_payment</order_status><!-- set default order status-->
+                <env>sandbox</env>
+                <sandbox_public_key backend_model="Magento\Config\Model\Config\Backend\Encrypted" />
+                <sandbox_secret_key backend_model="Magento\Config\Model\Config\Backend\Encrypted" />
+                <public_key backend_model="Magento\Config\Model\Config\Backend\Encrypted" />
+                <secret_key backend_model="Magento\Config\Model\Config\Backend\Encrypted" />
+            </xpanse_paypal>
+            <xpanse_googlepay>
+                <payment_action>authorize_capture</payment_action><!-- You can use another methor like capture  -->
+                <model>XpanseGooglePayFacade</model>
+                <can_use_checkout>1</can_use_checkout>
+                <can_capture>1</can_capture>
+                <can_refund>1</can_refund>
+                <can_refund_partial_per_invoice>1</can_refund_partial_per_invoice>
+                <can_get_saved_payments>1</can_get_saved_payments>
+                <active>1</active>
+                <title>GooglePay</title>
+                <order_status>pending_payment</order_status><!-- set default order status-->
+                <env>sandbox</env>
+                <sandbox_public_key backend_model="Magento\Config\Model\Config\Backend\Encrypted" />
+                <sandbox_secret_key backend_model="Magento\Config\Model\Config\Backend\Encrypted" />
+                <public_key backend_model="Magento\Config\Model\Config\Backend\Encrypted" />
+                <secret_key backend_model="Magento\Config\Model\Config\Backend\Encrypted" />
+            </xpanse_googlepay>
+            <xpanse_applepay>
+                <payment_action>authorize_capture</payment_action><!-- You can use another methor like capture  -->
+                <model>XpanseApplePayFacade</model>
+                <can_use_checkout>1</can_use_checkout>
+                <can_capture>1</can_capture>
+                <can_refund>1</can_refund>
+                <can_refund_partial_per_invoice>1</can_refund_partial_per_invoice>
+                <can_get_saved_payments>1</can_get_saved_payments>
+                <active>1</active>
+                <title>ApplePay</title>
+                <order_status>pending_payment</order_status><!-- set default order status-->
+                <env>sandbox</env>
+                <sandbox_public_key backend_model="Magento\Config\Model\Config\Backend\Encrypted" />
+                <sandbox_secret_key backend_model="Magento\Config\Model\Config\Backend\Encrypted" />
+                <public_key backend_model="Magento\Config\Model\Config\Backend\Encrypted" />
+                <secret_key backend_model="Magento\Config\Model\Config\Backend\Encrypted" />
+            </xpanse_applepay>
+            <xpanse_checkout_azupay>
+                <payment_action>authorize_capture</payment_action><!-- You can use another methor like capture  -->
+                <model>XpanseCheckoutPayIdFacade</model>
+                <can_use_checkout>1</can_use_checkout>
+                <can_capture>1</can_capture>
+                <can_refund>1</can_refund>
+                <can_refund_partial_per_invoice>1</can_refund_partial_per_invoice>
+                <can_get_saved_payments>1</can_get_saved_payments>
+                <active>1</active>
+                <title>PayID</title>
+                <order_status>pending_payment</order_status><!-- set default order status-->
+                <env>sandbox</env>
+                <sandbox_public_key backend_model="Magento\Config\Model\Config\Backend\Encrypted" />
+                <sandbox_secret_key backend_model="Magento\Config\Model\Config\Backend\Encrypted" />
+                <public_key backend_model="Magento\Config\Model\Config\Backend\Encrypted" />
+                <secret_key backend_model="Magento\Config\Model\Config\Backend\Encrypted" />
+            </xpanse_checkout_azupay>
+            <xpanse_payto>
+                <payment_action>authorize_capture</payment_action><!-- You can use another methor like capture  -->
+                <model>XpanseCheckoutPayToFacade</model>
+                <can_use_checkout>1</can_use_checkout>
+                <can_capture>1</can_capture>
+                <can_refund>1</can_refund>
+                <can_refund_partial_per_invoice>1</can_refund_partial_per_invoice>
+                <can_get_saved_payments>1</can_get_saved_payments>
+                <active>1</active>
+                <title>PayTo</title>
+                <order_status>pending_payment</order_status><!-- set default order status-->
+                <env>sandbox</env>
+                <sandbox_public_key backend_model="Magento\Config\Model\Config\Backend\Encrypted" />
+                <sandbox_secret_key backend_model="Magento\Config\Model\Config\Backend\Encrypted" />
+                <public_key backend_model="Magento\Config\Model\Config\Backend\Encrypted" />
+                <secret_key backend_model="Magento\Config\Model\Config\Backend\Encrypted" />
+            </xpanse_payto>
+            <xpanse_checkout_shift>
+                <payment_action>authorize_capture</payment_action><!-- You can use another methor like capture  -->
+                <model>XpanseCheckoutShiftFacade</model>
+                <can_use_checkout>1</can_use_checkout>
+                <can_capture>1</can_capture>
+                <can_refund>1</can_refund>
+                <can_refund_partial_per_invoice>1</can_refund_partial_per_invoice>
+                <can_get_saved_payments>1</can_get_saved_payments>
+                <active>1</active>
+                <title>Shift</title>
+                <order_status>pending_payment</order_status><!-- set default order status-->
+                <env>sandbox</env>
+                <sandbox_public_key backend_model="Magento\Config\Model\Config\Backend\Encrypted" />
+                <sandbox_secret_key backend_model="Magento\Config\Model\Config\Backend\Encrypted" />
+                <public_key backend_model="Magento\Config\Model\Config\Backend\Encrypted" />
+                <secret_key backend_model="Magento\Config\Model\Config\Backend\Encrypted" />
+            </xpanse_checkout_shift>
+            <xpanse_checkout_pay_by_account>
+                <payment_action>authorize_capture</payment_action><!-- You can use another methor like capture  -->
+                <model>XpanseCheckoutPayByAccountFacade</model>
+                <can_use_checkout>1</can_use_checkout>
+                <can_capture>1</can_capture>
+                <can_refund>1</can_refund>
+                <can_refund_partial_per_invoice>1</can_refund_partial_per_invoice>
+                <can_get_saved_payments>1</can_get_saved_payments>
+                <active>1</active>
+                <title>Pay By Account</title>
+                <order_status>pending_payment</order_status><!-- set default order status-->
+                <env>sandbox</env>
+                <sandbox_public_key backend_model="Magento\Config\Model\Config\Backend\Encrypted" />
+                <sandbox_secret_key backend_model="Magento\Config\Model\Config\Backend\Encrypted" />
+                <public_key backend_model="Magento\Config\Model\Config\Backend\Encrypted" />
+                <secret_key backend_model="Magento\Config\Model\Config\Backend\Encrypted" />
+            </xpanse_checkout_pay_by_account>
+            <xpanse_checkout_upi>
+                <payment_action>authorize_capture</payment_action><!-- You can use another methor like capture  -->
+                <model>XpanseCheckoutUpiFacade</model>
+                <can_use_checkout>1</can_use_checkout>
+                <can_capture>1</can_capture>
+                <can_refund>1</can_refund>
+                <can_refund_partial_per_invoice>1</can_refund_partial_per_invoice>
+                <can_get_saved_payments>1</can_get_saved_payments>
+                <active>1</active>
+                <title>UPI</title>
+                <order_status>pending_payment</order_status><!-- set default order status-->
+                <env>sandbox</env>
+                <sandbox_public_key backend_model="Magento\Config\Model\Config\Backend\Encrypted" />
+                <sandbox_secret_key backend_model="Magento\Config\Model\Config\Backend\Encrypted" />
+                <public_key backend_model="Magento\Config\Model\Config\Backend\Encrypted" />
+                <secret_key backend_model="Magento\Config\Model\Config\Backend\Encrypted" />
+            </xpanse_checkout_upi>
+        </payment>
+    </default>
+</config>

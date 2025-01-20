@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+
+<payment xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Payment:etc/payment.xsd">
+    <methods>
+        <method name="xpanse_card">
+            <allow_multiple_address>1</allow_multiple_address>
+        </method>
+        <method name="xpanse_paypal">
+            <allow_multiple_address>1</allow_multiple_address>
+        </method>
+        <method name="xpanse_googlepay">
+            <allow_multiple_address>1</allow_multiple_address>
+        </method>
+        <method name="xpanse_applepay">
+            <allow_multiple_address>1</allow_multiple_address>
+        </method>
+        <method name="xpanse_checkout_azupay">
+            <allow_multiple_address>1</allow_multiple_address>
+        </method>
+        <method name="xpanse_payto">
+            <allow_multiple_address>1</allow_multiple_address>
+        </method>
+        <method name="xpanse_checkout_shift">
+            <allow_multiple_address>1</allow_multiple_address>
+        </method>
+        <method name="xpanse_checkout_pay_by_account">
+            <allow_multiple_address>1</allow_multiple_address>
+        </method>
+        <method name="xpanse_checkout_upi">
+            <allow_multiple_address>1</allow_multiple_address>
+        </method>
+    </methods>
+</payment>

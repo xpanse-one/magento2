@@ -1,0 +1,39 @@
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:noNamespaceSchemaLocation="urn:magento:framework:Event/etc/events.xsd">
+    <event name="payment_method_assign_data_xpanse_card">
+        <observer name="xpanse_gateway_data_assign"
+                  instance="\Xpanse\Payment\Observer\XpanseAssignAdditionalDataObserver"/>
+    </event>
+    <event name="payment_method_assign_data_xpanse_paypal">
+        <observer name="xpanse_gateway_data_assign"
+                  instance="\Xpanse\Payment\Observer\XpanseAssignAdditionalDataObserver"/>
+    </event>
+    <event name="payment_method_assign_data_xpanse_googlepay">
+        <observer name="xpanse_gateway_data_assign"
+                  instance="\Xpanse\Payment\Observer\XpanseAssignAdditionalDataObserver"/>
+    </event>
+    <event name="payment_method_assign_data_xpanse_applepay">
+        <observer name="xpanse_gateway_data_assign"
+                  instance="\Xpanse\Payment\Observer\XpanseAssignAdditionalDataObserver"/>
+    </event>
+    <event name="payment_method_assign_data_xpanse_checkout_azupay">
+        <observer name="xpanse_gateway_data_assign"
+                  instance="\Xpanse\Payment\Observer\XpanseAssignAdditionalDataObserver"/>
+    </event>
+    <event name="payment_method_assign_data_xpanse_payto">
+        <observer name="xpanse_gateway_data_assign"
+                  instance="\Xpanse\Payment\Observer\XpanseAssignAdditionalDataObserver"/>
+    </event>
+    <event name="payment_method_assign_data_xpanse_checkout_shift">
+        <observer name="xpanse_gateway_data_assign"
+                  instance="\Xpanse\Payment\Observer\XpanseAssignAdditionalDataObserver"/>
+    </event>
+    <event name="payment_method_assign_data_xpanse_checkout_pay_by_account">
+        <observer name="xpanse_gateway_data_assign"
+                  instance="\Xpanse\Payment\Observer\XpanseAssignAdditionalDataObserver"/>
+    </event>
+    <event name="payment_method_assign_data_xpanse_checkout_upi">
+        <observer name="xpanse_gateway_data_assign"
+                  instance="\Xpanse\Payment\Observer\XpanseAssignAdditionalDataObserver"/>
+    </event>
+</config>

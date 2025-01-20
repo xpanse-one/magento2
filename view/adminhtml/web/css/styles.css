@@ -1,0 +1,10 @@
+#payment_us_xpanse-head {
+    background: url(../images/xpanse-logo.png) no-repeat scroll 0 50% / 18rem auto;
+    background-position-x: left;
+    padding-left: 20rem;
+    font-weight: bold;
+}
+#payment_us_xpanse-head:before {
+    left: auto;
+    right: 1.3rem;
+}

@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:ObjectManager/etc/config.xsd">
+    <type name="Magento\Checkout\Model\CompositeConfigProvider">
+        <arguments>
+            <argument name="configProviders" xsi:type="array">
+                <item name="xpanse_payment_config_provider" xsi:type="object">Xpanse\Payment\Model\Ui\ConfigProvider</item>
+            </argument>
+        </arguments>
+    </type>
+    <type name="Xpanse\Payment\Model\Ui\ConfigProvider">
+        <arguments>
+            <argument name="methods" xsi:type="array">
+                <item name="xpanse_card" xsi:type="string">Xpanse_Payment/js/view/payment/method-renderer/xpanse-card-method</item>
+                <item name="xpanse_paypal" xsi:type="string">Xpanse_Payment/js/view/payment/method-renderer/xpanse-paypal-method</item>
+                <item name="xpanse_googlepay" xsi:type="string">Xpanse_Payment/js/view/payment/method-renderer/xpanse-googlepay-method</item>
+                <item name="xpanse_applepay" xsi:type="string">Xpanse_Payment/js/view/payment/method-renderer/xpanse-applepay-method</item>
+                <item name="xpanse_checkout_azupay" xsi:type="string">Xpanse_Payment/js/view/payment/method-renderer/xpanse-checkout-method</item>
+                <item name="xpanse_payto" xsi:type="string">Xpanse_Payment/js/view/payment/method-renderer/xpanse-payto-method</item>
+                <item name="xpanse_checkout_shift" xsi:type="string">Xpanse_Payment/js/view/payment/method-renderer/xpanse-checkout-method</item>
+                <item name="xpanse_checkout_pay_by_account" xsi:type="string">Xpanse_Payment/js/view/payment/method-renderer/xpanse-checkout-method</item>
+                <item name="xpanse_checkout_upi" xsi:type="string">Xpanse_Payment/js/view/payment/method-renderer/xpanse-checkout-method</item>
+            </argument>
+        </arguments>
+    </type>
+</config>

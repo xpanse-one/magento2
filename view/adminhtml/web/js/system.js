@@ -35,7 +35,7 @@ require([
 
         if (errors.length > 0) {
             alert({
-                title: $t('Xayfurl Credential Validation Failed'),
+                title: $t('xayfurl Credential Validation Failed'),
                 content:  errors.join('<br />')
             });
             return false;
@@ -62,8 +62,8 @@ require([
                     }
                 } else {
                     alert({
-                        title: $t('Xayfurl Credential Validation Failed'),
-                        content: $t('Your Xayfurl Credentials could not be validated. Please ensure you have selected the correct environment and entered a valid Public Key and Private Key.')
+                        title: $t('xayfurl Credential Validation Failed'),
+                        content: $t('Your xayfurl Credentials could not be validated. Please ensure you have selected the correct environment and entered a valid Public Key and Private Key.')
                     });
                 }
             }

@@ -2,17 +2,17 @@ define(
   [
     'ko',
     'jquery',
-    'Xpanse_Payment/js/view/payment/method-renderer/xpanse-base-method',
+    'xpanse_Payment/js/view/payment/method-renderer/xpanse-base-method',
     'Magento_Checkout/js/model/quote',
-    'Xpanse_Payment/js/model/xpanse',
-    'Xpanse_Payment/js/model/xpanse-configuration',
+    'xpanse_Payment/js/model/xpanse',
+    'xpanse_Payment/js/model/xpanse-configuration',
   ],
   function (ko, $, XayfurlBaseMethod, quote, xpanse, xpanseConfig) {
     'use strict';
 
     return XayfurlBaseMethod.extend({
       defaults: {
-        template: 'Xpanse_Payment/payment/xpanse-payto-form',
+        template: 'xpanse_Payment/payment/xpanse-payto-form',
       },
       getCode: function() {
         return 'xpanse_payto';

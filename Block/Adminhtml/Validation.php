@@ -1,5 +1,5 @@
 <?php
-namespace Xpanse\Payment\Block\Adminhtml;
+namespace xpanse\Payment\Block\Adminhtml;
 
 use Magento\Config\Block\System\Config\Form\Field;
 use Magento\Framework\Data\Form\Element\AbstractElement;

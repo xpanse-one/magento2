@@ -4,8 +4,8 @@ define(
     'jquery',
     'Magento_Checkout/js/view/payment/default',
     'Magento_Checkout/js/model/quote',
-    'Xpanse_Payment/js/model/xpanse',
-    'Xpanse_Payment/js/model/xpanse-configuration',
+    'xpanse_Payment/js/model/xpanse',
+    'xpanse_Payment/js/model/xpanse-configuration',
     'Magento_Checkout/js/model/payment/additional-validators',
   ],
   function (ko, $, Component, quote, xpanse, xpanseConfig, additionalValidators) {
@@ -24,7 +24,7 @@ define(
       customerEmail: window.checkoutConfig.customerData?.email || quote.guestEmail,
 
       defaults: {
-        template: 'Xpanse_Payment/payment/xpanse-card-form',
+        template: 'xpanse_Payment/payment/xpanse-card-form',
       },
       getCode: function() {
         return 'xpanse_card';

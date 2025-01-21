@@ -1,12 +1,12 @@
 <?php
 
-namespace Xpanse\Payment\Model\Ui;
+namespace xpanse\Payment\Model\Ui;
 
 use Magento\Checkout\Model\ConfigProviderInterface;
-use Xpanse\Payment\Model\Xpanse;
-use Xpanse\Payment\Model\Config;
+use xpanse\Payment\Model\xpanse;
+use xpanse\Payment\Model\Config;
 use Magento\Checkout\Model\Session as CheckoutSession;
-use Xpanse\Payment\Model\Adapter\XpanseAdapter;
+use xpanse\Payment\Model\Adapter\xpanseAdapter;
 
 /**
  * Class ConfigProvider
@@ -22,7 +22,7 @@ class ConfigProvider implements ConfigProviderInterface
     public function __construct(
         Config $config,
         CheckoutSession $checkoutSession,
-        XpanseAdapter $xpanseAdapter
+        xpanseAdapter $xpanseAdapter
     ) {
         $this->config = $config;
         $this->checkoutSession = $checkoutSession;
@@ -69,14 +69,14 @@ class ConfigProvider implements ConfigProviderInterface
     protected function getSavedPayments()
     {
         if (empty($this->savedPaymentMethods)) {
-            $customerXpanseId = $this->getCustomerXpanseId();
+            $customerxpanseId = $this->getCustomerxpanseId();
 
-            if (!$customerXpanseId) {
+            if (!$customerxpanseId) {
                 return false;
             }
 
             $data = [
-                'CustomerId' => $customerXpanseId
+                'CustomerId' => $customerxpanseId
             ];
 
             $savedMethods = $this->xpanseAdapter->getCustomerPaymentMethods($data);
@@ -95,7 +95,7 @@ class ConfigProvider implements ConfigProviderInterface
         return $this->savedPaymentMethods;
     }
 
-    protected function getCustomerXpanseId()
+    protected function getCustomerxpanseId()
     {
         $customer = $this->checkoutSession->getQuote()->getCustomer();
         if ($customer->getId() != null) {

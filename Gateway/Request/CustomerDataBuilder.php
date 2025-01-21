@@ -3,10 +3,10 @@
  * Copyright © Magento, Inc. All rights reserved.
  * See COPYING.txt for license details.
  */
-namespace Xpanse\Payment\Gateway\Request;
+namespace xpanse\Payment\Gateway\Request;
 
 use Magento\Payment\Gateway\Request\BuilderInterface;
-use Xpanse\Payment\Gateway\SubjectReader;
+use xpanse\Payment\Gateway\SubjectReader;
 use Magento\Customer\Api\CustomerRepositoryInterface;
 
 /**
@@ -57,10 +57,10 @@ class CustomerDataBuilder implements BuilderInterface
         if ($isLoginCustomer) {
             try {
                 $customer = $this->customerRepository->getById($customerId);
-                $customerXpanseId = $customer->getCustomAttribute('xpanse_payment_id') ?
+                $customerxpanseId = $customer->getCustomAttribute('xpanse_payment_id') ?
                     $customer->getCustomAttribute('xpanse_payment_id')->getValue() : '';
 
-                $returnData['customerXpanseId'] = $customerXpanseId;
+                $returnData['customerxpanseId'] = $customerxpanseId;
                 $returnData['FirstName'] = $customer->getFirstname();
                 $returnData['LastName'] = $customer->getLastname();
                 $returnData['Email'] = $customer->getEmail();

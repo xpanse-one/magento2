@@ -5,15 +5,15 @@
  */
 declare(strict_types=1);
 
-namespace Xpanse\Payment\Gateway\Validator;
+namespace xpanse\Payment\Gateway\Validator;
 
 /**
- * Processes errors codes from Xpanse response.
+ * Processes errors codes from xpanse response.
  */
 class ErrorCodeProvider
 {
     /**
-     * Retrieves list of error codes from Xpanse response.
+     * Retrieves list of error codes from xpanse response.
      *
      * @param  $response
      * @return array

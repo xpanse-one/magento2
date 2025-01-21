@@ -1,6 +1,6 @@
 <?php
 
-namespace Xpanse\Payment\Gateway\Config;
+namespace xpanse\Payment\Gateway\Config;
 
 use Magento\Framework\App\Config\ScopeConfigInterface;
 

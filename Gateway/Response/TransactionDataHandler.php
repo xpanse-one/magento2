@@ -3,9 +3,9 @@
  * Copyright © Magento, Inc. All rights reserved.
  * See COPYING.txt for license details.
  */
-namespace Xpanse\Payment\Gateway\Response;
+namespace xpanse\Payment\Gateway\Response;
 
-use Xpanse\Payment\Gateway\SubjectReader;
+use xpanse\Payment\Gateway\SubjectReader;
 use Magento\Payment\Gateway\Response\HandlerInterface;
 use Magento\Sales\Model\Order\Payment;
 use Magento\Customer\Api\CustomerRepositoryInterface;

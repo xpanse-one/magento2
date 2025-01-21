@@ -1,8 +1,8 @@
 <?php
-namespace Xpanse\Payment\Model;
+namespace xpanse\Payment\Model;
 
 use Magento\Framework\App\Config\ScopeConfigInterface;
-use Xpanse\Payment\Model\Xpanse;
+use xpanse\Payment\Model\xpanse;
 use Magento\Store\Model\ScopeInterface;
 
 class Config extends \Magento\Payment\Gateway\Config\Config

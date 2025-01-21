@@ -3,7 +3,7 @@
  * Copyright © Magento, Inc. All rights reserved.
  * See COPYING.txt for license details.
  */
-namespace Xpanse\Payment\Block;
+namespace xpanse\Payment\Block;
 
 use Magento\Framework\Phrase;
 

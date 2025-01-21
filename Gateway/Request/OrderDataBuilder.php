@@ -3,9 +3,9 @@
  * Copyright © Magento, Inc. All rights reserved.
  * See COPYING.txt for license details.
  */
-namespace Xpanse\Payment\Gateway\Request;
+namespace xpanse\Payment\Gateway\Request;
 
-use Xpanse\Payment\Gateway\SubjectReader;
+use xpanse\Payment\Gateway\SubjectReader;
 use Magento\Payment\Gateway\Request\BuilderInterface;
 use Magento\Payment\Helper\Formatter;
 use Magento\Framework\App\Config\ScopeConfigInterface;
@@ -101,11 +101,11 @@ class OrderDataBuilder implements BuilderInterface
                 $discountAmountAdj = $totalDiscountAmount - ($discountAmountPerItem * $item->getQtyOrdered());
             }
 
-            /*item price will be sent to Xpanse - Xpanse will use it to recalculate order total*/
-            $itemPriceForXpanseApi = $itemPrice + $taxAmountPerItem - $discountAmountPerItem;
+            /*item price will be sent to xpanse - xpanse will use it to recalculate order total*/
+            $itemPriceForxpanseApi = $itemPrice + $taxAmountPerItem - $discountAmountPerItem;
 
             if ($item->getQtyOrdered() == 1 || !$this->needToSplitItem($discountAmountAdj, $taxAmountAdj)) {
-                $results[] = $this->generateXpanseItemData($item, $item->getQtyOrdered(), $itemPriceForXpanseApi);
+                $results[] = $this->generatexpanseItemData($item, $item->getQtyOrdered(), $itemPriceForxpanseApi);
             } else {
                 /*
                  * in the case that we cannot split the tax and discount to calculate for item amount,
@@ -114,21 +114,21 @@ class OrderDataBuilder implements BuilderInterface
                  */
 
                 /* item without adjustment*/
-                $results[] = $this->generateXpanseItemData($item, $item->getQtyOrdered() - 1, $itemPriceForXpanseApi);
+                $results[] = $this->generatexpanseItemData($item, $item->getQtyOrdered() - 1, $itemPriceForxpanseApi);
 
                 /*item price with adjustment*/
-                $itemPriceForXpanseApiWithAdj = $itemPrice + ($taxAmountPerItem + $taxAmountAdj) -
+                $itemPriceForxpanseApiWithAdj = $itemPrice + ($taxAmountPerItem + $taxAmountAdj) -
                     ($discountAmountPerItem + $discountAmountAdj);
 
                 /*item with adjustment*/
-                $results[] = $this->generateXpanseItemData($item, 1, $itemPriceForXpanseApiWithAdj);
+                $results[] = $this->generatexpanseItemData($item, 1, $itemPriceForxpanseApiWithAdj);
             }
         }
         return $results;
     }
 
     /**
-     * Xpanse only allows 12 character for ProductCode, 26 characters for description
+     * xpanse only allows 12 character for ProductCode, 26 characters for description
      *
      * @param $string
      * @param $length
@@ -145,7 +145,7 @@ class OrderDataBuilder implements BuilderInterface
      * @param $amount
      * @return array
      */
-    private function generateXpanseItemData($item, $qty, $amount): array
+    private function generatexpanseItemData($item, $qty, $amount): array
     {
         return [
             'ProductCode' => $this->generateValidDataForOrderItem($item->getSku(), 12),

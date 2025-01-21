@@ -6,14 +6,14 @@
                 <attribute type="expanded">1</attribute>
                 <attribute type="displayIn">recommended_solutions</attribute>
                 <fieldset_css>xpanse-payments complex</fieldset_css>
-                <label>Xpanse Payment</label>
+                <label>xpanse Payment</label>
                 <field id="active" translate="label comment" sortOrder="1" type="select" showInDefault="1" showInWebsite="1" showInStore="0">
                     <label>Enabled</label>
                     <source_model>Magento\Config\Model\Config\Source\Yesno</source_model>
                 </field>
                 <field id="env" translate="label comment" sortOrder="10" type="select" showInDefault="1" showInWebsite="1" showInStore="0">
                     <label>Environment</label>
-                    <source_model>Xpanse\Payment\Model\Config::getEnvironments</source_model>
+                    <source_model>xpanse\Payment\Model\Config::getEnvironments</source_model>
                 </field>
                 <field id="title" translate="label comment" sortOrder="20" type="text" showInDefault="1" showInWebsite="1" showInStore="1">
                     <label>Title</label>
@@ -61,7 +61,7 @@
                 <field id="key_validation" translate="label" type="text" sortOrder="50" showInDefault="1" showInWebsite="1" showInStore="1">
                     <label></label>
                     <comment><![CDATA[After making any changes to Public Key or Secret key, please Save Config first before validating credentials.]]></comment>
-                    <frontend_model>Xpanse\Payment\Block\Adminhtml\Validation</frontend_model>
+                    <frontend_model>xpanse\Payment\Block\Adminhtml\Validation</frontend_model>
                 </field>
             </group>
         </section>

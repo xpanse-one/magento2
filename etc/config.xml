@@ -5,7 +5,7 @@
         <payment>
             <xpanse_card>
                 <payment_action>authorize_capture</payment_action><!-- You can use another methor like capture  -->
-                <model>XpanseCardFacade</model>
+                <model>xpanseCardFacade</model>
                 <can_use_checkout>1</can_use_checkout>
                 <can_capture>1</can_capture>
                 <can_refund>1</can_refund>
@@ -22,7 +22,7 @@
             </xpanse_card>
             <xpanse_paypal>
                 <payment_action>authorize_capture</payment_action><!-- You can use another methor like capture  -->
-                <model>XpansePaypalFacade</model>
+                <model>xpansePaypalFacade</model>
                 <can_use_checkout>1</can_use_checkout>
                 <can_capture>1</can_capture>
                 <can_refund>1</can_refund>
@@ -39,7 +39,7 @@
             </xpanse_paypal>
             <xpanse_googlepay>
                 <payment_action>authorize_capture</payment_action><!-- You can use another methor like capture  -->
-                <model>XpanseGooglePayFacade</model>
+                <model>xpanseGooglePayFacade</model>
                 <can_use_checkout>1</can_use_checkout>
                 <can_capture>1</can_capture>
                 <can_refund>1</can_refund>
@@ -56,7 +56,7 @@
             </xpanse_googlepay>
             <xpanse_applepay>
                 <payment_action>authorize_capture</payment_action><!-- You can use another methor like capture  -->
-                <model>XpanseApplePayFacade</model>
+                <model>xpanseApplePayFacade</model>
                 <can_use_checkout>1</can_use_checkout>
                 <can_capture>1</can_capture>
                 <can_refund>1</can_refund>
@@ -73,7 +73,7 @@
             </xpanse_applepay>
             <xpanse_checkout_azupay>
                 <payment_action>authorize_capture</payment_action><!-- You can use another methor like capture  -->
-                <model>XpanseCheckoutPayIdFacade</model>
+                <model>xpanseCheckoutPayIdFacade</model>
                 <can_use_checkout>1</can_use_checkout>
                 <can_capture>1</can_capture>
                 <can_refund>1</can_refund>
@@ -90,7 +90,7 @@
             </xpanse_checkout_azupay>
             <xpanse_payto>
                 <payment_action>authorize_capture</payment_action><!-- You can use another methor like capture  -->
-                <model>XpanseCheckoutPayToFacade</model>
+                <model>xpanseCheckoutPayToFacade</model>
                 <can_use_checkout>1</can_use_checkout>
                 <can_capture>1</can_capture>
                 <can_refund>1</can_refund>
@@ -107,7 +107,7 @@
             </xpanse_payto>
             <xpanse_checkout_shift>
                 <payment_action>authorize_capture</payment_action><!-- You can use another methor like capture  -->
-                <model>XpanseCheckoutShiftFacade</model>
+                <model>xpanseCheckoutShiftFacade</model>
                 <can_use_checkout>1</can_use_checkout>
                 <can_capture>1</can_capture>
                 <can_refund>1</can_refund>
@@ -124,7 +124,7 @@
             </xpanse_checkout_shift>
             <xpanse_checkout_pay_by_account>
                 <payment_action>authorize_capture</payment_action><!-- You can use another methor like capture  -->
-                <model>XpanseCheckoutPayByAccountFacade</model>
+                <model>xpanseCheckoutPayByAccountFacade</model>
                 <can_use_checkout>1</can_use_checkout>
                 <can_capture>1</can_capture>
                 <can_refund>1</can_refund>
@@ -141,7 +141,7 @@
             </xpanse_checkout_pay_by_account>
             <xpanse_checkout_upi>
                 <payment_action>authorize_capture</payment_action><!-- You can use another methor like capture  -->
-                <model>XpanseCheckoutUpiFacade</model>
+                <model>xpanseCheckoutUpiFacade</model>
                 <can_use_checkout>1</can_use_checkout>
                 <can_capture>1</can_capture>
                 <can_refund>1</can_refund>

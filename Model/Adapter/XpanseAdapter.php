@@ -3,29 +3,29 @@
  * Copyright © Magento, Inc. All rights reserved.
  * See COPYING.txt for license details.
  */
-namespace Xpanse\Payment\Model\Adapter;
+namespace xpanse\Payment\Model\Adapter;
 
-use Xpanse\Sdk as XpanseSDK;
+use xpanse\Sdk as xpanseSDK;
 
 /**
- * Class XpanseAdapter
+ * Class xpanseAdapter
  * @codeCoverageIgnore
  */
-class XpanseAdapter
+class xpanseAdapter
 {
     /**
-     * @var \Xpanse\Payment\Model\Config
+     * @var \xpanse\Payment\Model\Config
      */
     private $config;
 
     /**
-     * @param \Xpanse\Payment\Model\Config $config
+     * @param \xpanse\Payment\Model\Config $config
      */
     public function __construct(
-        \Xpanse\Payment\Model\Config $config
+        \xpanse\Payment\Model\Config $config
     ) {
         $this->config = $config;
-        XpanseSDK\Config::initialise($this->config->getSecretKey(), $this->config->getEnv());
+        xpanseSDK\Config::initialise($this->config->getSecretKey(), $this->config->getEnv());
     }
 
     /**
@@ -34,10 +34,10 @@ class XpanseAdapter
      */
     public function chargeByToken($data)
     {
-        $svc = new XpanseSDK\Charge();
+        $svc = new xpanseSDK\Charge();
         try {
             return $svc->CreateWithToken($data);
-        } catch (XpanseSDK\ResponseException $exception) {
+        } catch (xpanseSDK\ResponseException $exception) {
             return [
                 'errorMessage' => $exception->getMessage(),
                 'errorCode' => $exception->getCode()
@@ -51,10 +51,10 @@ class XpanseAdapter
      */
     public function getTransactionInfo($data)
     {
-        $svc = new XpanseSDK\Charge();
+        $svc = new xpanseSDK\Charge();
         try {
             return $svc->Single($data);
-        } catch (XpanseSDK\ResponseException $exception) {
+        } catch (xpanseSDK\ResponseException $exception) {
             return [
                 'errorMessage' => $exception->getMessage(),
                 'errorCode' => $exception->getCode()
@@ -69,10 +69,10 @@ class XpanseAdapter
      */
     public function refund($data)
     {
-        $svc = new XpanseSDK\Charge();
+        $svc = new xpanseSDK\Charge();
         try {
             return $svc->Refund($data);
-        } catch (XpanseSDK\ResponseException $exception) {
+        } catch (xpanseSDK\ResponseException $exception) {
             return [
                 'errorMessage' => $exception->getMessage(),
                 'errorCode' => $exception->getCode()
@@ -82,10 +82,10 @@ class XpanseAdapter
 
     public function getCustomerPaymentMethods($data)
     {
-        $svc = new XpanseSDK\Customer();
+        $svc = new xpanseSDK\Customer();
         try {
             return $svc->CustomerPaymentMethods($data);
-        } catch (XpanseSDK\ResponseException $exception) {
+        } catch (xpanseSDK\ResponseException $exception) {
             return [
                 'errorMessage' => $exception->getMessage(),
                 'errorCode' => $exception->getCode()
@@ -95,13 +95,13 @@ class XpanseAdapter
 
     public function chargeByPaymentMethod($data)
     {
-        $svc = new XpanseSDK\Charge();
+        $svc = new xpanseSDK\Charge();
         try {
             if ($data['Phone'] && substr($data['Phone'], 0, 1) == '0') {
                 $data['Phone'] = '+61' . substr($data['Phone'], 1);
             }
             return $svc->CreateWithPaymentMethod($data);
-        } catch (XpanseSDK\ResponseException $exception) {
+        } catch (xpanseSDK\ResponseException $exception) {
             return [
                 'errorMessage' => $exception->getMessage(),
                 'errorCode' => $exception->getCode()
@@ -109,15 +109,15 @@ class XpanseAdapter
         }
     }
 
-    public function chargeByCustomerToken($data, $customerXpanseId)
+    public function chargeByCustomerToken($data, $customerxpanseId)
     {
         try {
-            if ($customerXpanseId) {
-                return $this->chargeForExistXpanseCustomer($data, $customerXpanseId);
+            if ($customerxpanseId) {
+                return $this->chargeForExistxpanseCustomer($data, $customerxpanseId);
             } else {
-                return $this->chargeForNewXpanseCustomer($data);
+                return $this->chargeForNewxpanseCustomer($data);
             }
-        } catch (XpanseSDK\ResponseException $exception) {
+        } catch (xpanseSDK\ResponseException $exception) {
             return [
                 'errorMessage' => $exception->getMessage(),
                 'errorCode' => $exception->getCode()
@@ -127,11 +127,11 @@ class XpanseAdapter
 
     public function getProvidersInfo($data)
     {
-        $svc = new XpanseSDK\Info();
+        $svc = new xpanseSDK\Info();
 
         try {
             return $svc->Providers($data);
-        } catch (XpanseSDK\ResponseException $exception) {
+        } catch (xpanseSDK\ResponseException $exception) {
             return [
                 'errorMessage' => $exception->getMessage(),
                 'errorCode' => $exception->getCode()
@@ -139,12 +139,12 @@ class XpanseAdapter
         }
     }
 
-    protected function chargeForExistXpanseCustomer($data, $customerXpanseId)
+    protected function chargeForExistxpanseCustomer($data, $customerxpanseId)
     {
-        $customerSdk = new XpanseSDK\Customer();
-        $chargeSdk = new XpanseSDK\Charge();
+        $customerSdk = new xpanseSDK\Customer();
+        $chargeSdk = new xpanseSDK\Charge();
 
-        $data['CustomerId'] = $customerXpanseId;
+        $data['CustomerId'] = $customerxpanseId;
         if ($data['xpanseSaveMyPayment']) {
             $response = $customerSdk->CreatePaymentMethodWithToken($data);
             $data['PaymentMethodId'] = $response['paymentMethodId'];
@@ -156,16 +156,16 @@ class XpanseAdapter
         }
     }
 
-    protected function chargeForNewXpanseCustomer($data)
+    protected function chargeForNewxpanseCustomer($data)
     {
-        $chargeSdk = new XpanseSDK\Charge();
+        $chargeSdk = new xpanseSDK\Charge();
 
         if ($data['Phone'] && substr($data['Phone'], 0, 1) == '0') {
             $data['Phone'] = '+61' . substr($data['Phone'], 1);
         }
 
         if ($data['xpanseSaveMyPayment']) {
-            $customerSdk = new XpanseSDK\Customer();
+            $customerSdk = new xpanseSDK\Customer();
             $response = $customerSdk->CreateWithToken($data);
             $data['CustomerId'] = $response['customerId'];
             return $chargeSdk->CreateWithCustomer($data);

@@ -1,16 +1,16 @@
 <?php
 
-namespace Xpanse\Payment\Controller\Adminhtml\Configuration;
+namespace xpanse\Payment\Controller\Adminhtml\Configuration;
 
-use Xpanse\Payment\Model\Config;
+use xpanse\Payment\Model\Config;
 use Exception;
 use Magento\Backend\App\Action;
 use Magento\Framework\Controller\ResultFactory;
 use Magento\Framework\Controller\ResultInterface;
-use Xpanse\Sdk as XpanseSDK;
-use Xpanse\Sdk\HttpWrapper;
-use Xpanse\Sdk\ResponseException;
-use Xpanse\Sdk\UrlTools;
+use xpanse\Sdk as xpanseSDK;
+use xpanse\Sdk\HttpWrapper;
+use xpanse\Sdk\ResponseException;
+use xpanse\Sdk\UrlTools;
 
 class Validate extends Action
 {
@@ -72,7 +72,7 @@ class Validate extends Action
         $response = $this->resultFactory->create(ResultFactory::TYPE_JSON);
 
         try {
-            XpanseSDK\Config::initialise($privateKey, $environment);
+            xpanseSDK\Config::initialise($privateKey, $environment);
 
             if ($this->checkSecretKey() && $this->checkPublicKey($publicKey)) {
                 $response->setData(['success' => 'true']);
@@ -89,7 +89,7 @@ class Validate extends Action
 
     protected function checkSecretKey()
     {
-        $svc = new XpanseSDK\Info();
+        $svc = new xpanseSDK\Info();
         $result = $svc->Providers([]);
         if (array_key_exists('hasCardProviders', $result)) {
             return true;

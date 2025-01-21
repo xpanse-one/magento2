@@ -1,11 +1,11 @@
 <?php
 
-namespace Xpanse\Payment\Observer;
+namespace xpanse\Payment\Observer;
 
 use Magento\Framework\Event\Observer;
 use Magento\Quote\Api\Data\PaymentInterface;
 
-class XpanseAssignAdditionalDataObserver extends \Magento\Payment\Observer\AbstractDataAssignObserver
+class xpanseAssignAdditionalDataObserver extends \Magento\Payment\Observer\AbstractDataAssignObserver
 {
     const TOKEN_OBJECT_STRING = 'xpanseToken';
     const XPANSE_CHARGE_ID = 'xpanseChargeId';

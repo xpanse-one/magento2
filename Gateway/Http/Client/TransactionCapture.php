@@ -3,7 +3,7 @@
  * Copyright © Magento, Inc. All rights reserved.
  * See COPYING.txt for license details.
  */
-namespace Xpanse\Payment\Gateway\Http\Client;
+namespace xpanse\Payment\Gateway\Http\Client;
 
 /**
  * Class TransactionCapture
@@ -20,8 +20,8 @@ class TransactionCapture extends AbstractTransaction
             $result = $this->adapterFactory->create()->getTransactionInfo($data);
         } elseif (isset($data["Token"])) {
             if (!empty($data['loginCustomer'])) {
-                // this method will respond customerId from Xpanse
-                $result = $this->adapterFactory->create()->chargeByCustomerToken($data, $data['customerXpanseId']);
+                // this method will respond customerId from cpanse
+                $result = $this->adapterFactory->create()->chargeByCustomerToken($data, $data['customerxpanseId']);
             } else {
                 // guest checkout
                 $result = $this->adapterFactory->create()->chargeByToken($data);

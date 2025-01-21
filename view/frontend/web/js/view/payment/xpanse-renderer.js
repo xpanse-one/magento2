@@ -2,7 +2,7 @@ define(
   [
     'uiComponent',
     'Magento_Checkout/js/model/payment/renderer-list',
-    'Xpanse_Payment/js/model/xpanse-configuration'
+    'xpanse_Payment/js/model/xpanse-configuration'
   ],
   function (
     Component,
@@ -21,7 +21,7 @@ define(
       rendererList.push(
         {
           type: 'xpanse_card',
-          component: 'Xpanse_Payment/js/view/payment/method-renderer/xpanse-card-method',
+          component: 'xpanse_Payment/js/view/payment/method-renderer/xpanse-card-method',
         },
       );
     }
@@ -30,7 +30,7 @@ define(
       rendererList.push(
         {
           type: 'xpanse_paypal',
-          component: 'Xpanse_Payment/js/view/payment/method-renderer/xpanse-paypal-method',
+          component: 'xpanse_Payment/js/view/payment/method-renderer/xpanse-paypal-method',
         },
       );
     }
@@ -39,7 +39,7 @@ define(
       rendererList.push(
         {
           type: 'xpanse_googlepay',
-          component: 'Xpanse_Payment/js/view/payment/method-renderer/xpanse-googlepay-method',
+          component: 'xpanse_Payment/js/view/payment/method-renderer/xpanse-googlepay-method',
         },
       );
     }
@@ -48,7 +48,7 @@ define(
       rendererList.push(
         {
           type: 'xpanse_applepay',
-          component: 'Xpanse_Payment/js/view/payment/method-renderer/xpanse-applepay-method',
+          component: 'xpanse_Payment/js/view/payment/method-renderer/xpanse-applepay-method',
         },
       );
     }
@@ -59,7 +59,7 @@ define(
         rendererList.push(
           {
             type: `xpanse_checkout_${type}`,
-            component: 'Xpanse_Payment/js/view/payment/method-renderer/xpanse-checkout-method',
+            component: 'xpanse_Payment/js/view/payment/method-renderer/xpanse-checkout-method',
             config: {
               provider: provider,
             }
@@ -72,7 +72,7 @@ define(
       rendererList.push(
         {
           type: 'xpanse_payto',
-          component: 'Xpanse_Payment/js/view/payment/method-renderer/xpanse-payto-method',
+          component: 'xpanse_Payment/js/view/payment/method-renderer/xpanse-payto-method',
         },
       );
     }

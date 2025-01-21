@@ -1,5 +1,5 @@
 <?php
-namespace Xpanse\Payment\Setup\Patch\Data;
+namespace xpanse\Payment\Setup\Patch\Data;
 
 use Exception;
 use Magento\Customer\Setup\Patch\Data\UpdateIdentifierCustomerAttributesVisibility;
@@ -11,7 +11,7 @@ use Magento\Customer\Setup\CustomerSetupFactory;
 use Magento\Framework\Setup\ModuleDataSetupInterface;
 use Magento\Framework\Setup\Patch\DataPatchInterface;
 
-class AddXpansePaymentId implements DataPatchInterface
+class AddxpansePaymentId implements DataPatchInterface
 {
 
     /**
@@ -65,7 +65,7 @@ class AddXpansePaymentId implements DataPatchInterface
                 CustomerMetadataInterface::ENTITY_TYPE_CUSTOMER,
                 'xpanse_payment_id',
                 [
-                    'label' => 'Customer Xpanse Payment Id',
+                    'label' => 'Customer cpanse Payment Id',
                     'required' => 0,
                     'position' => 333,
                     'system' => 0,

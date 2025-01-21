@@ -3,7 +3,7 @@
  * Copyright © Magento, Inc. All rights reserved.
  * See COPYING.txt for license details.
  */
-namespace Xpanse\Payment\Gateway\Http\Client;
+namespace xpanse\Payment\Gateway\Http\Client;
 
 /**
  * Class TransactionCapture

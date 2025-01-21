@@ -1,6 +1,6 @@
 <?php
 
-namespace Xpanse\Payment\Gateway\Validator;
+namespace xpanse\Payment\Gateway\Validator;
 
 use Magento\Payment\Gateway\Validator\ResultInterface;
 

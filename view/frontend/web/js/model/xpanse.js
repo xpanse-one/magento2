@@ -1,7 +1,7 @@
 define(
   [
     'xpansejs',
-    'Xpanse_Payment/js/model/xpanse-configuration'
+    'xpanse_Payment/js/model/xpanse-configuration'
   ],
   function(pf, xpanseConfig) {
     'use strict';

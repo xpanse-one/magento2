@@ -1,8 +1,8 @@
 <?php
-namespace Xpanse\Payment\Gateway\Request;
+namespace xpanse\Payment\Gateway\Request;
 
 use InvalidArgumentException;
-use Xpanse\Payment\Gateway\SubjectReader;
+use xpanse\Payment\Gateway\SubjectReader;
 use Magento\Payment\Gateway\Request\BuilderInterface;
 use Magento\Payment\Helper\Formatter;
 use Magento\Sales\Api\Data\TransactionInterface;

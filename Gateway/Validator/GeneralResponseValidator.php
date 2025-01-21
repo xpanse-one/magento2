@@ -3,10 +3,10 @@
  * Copyright © Magento, Inc. All rights reserved.
  * See COPYING.txt for license details.
  */
-namespace Xpanse\Payment\Gateway\Validator;
+namespace xpanse\Payment\Gateway\Validator;
 
 use Magento\Payment\Gateway\Validator\AbstractValidator;
-use Xpanse\Payment\Gateway\SubjectReader;
+use xpanse\Payment\Gateway\SubjectReader;
 use Magento\Payment\Gateway\Validator\ResultInterfaceFactory;
 
 class GeneralResponseValidator extends AbstractValidator

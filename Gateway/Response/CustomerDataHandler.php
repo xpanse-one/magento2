@@ -3,9 +3,9 @@
  * Copyright © Magento, Inc. All rights reserved.
  * See COPYING.txt for license details.
  */
-namespace Xpanse\Payment\Gateway\Response;
+namespace xpanse\Payment\Gateway\Response;
 
-use Xpanse\Payment\Gateway\SubjectReader;
+use xpanse\Payment\Gateway\SubjectReader;
 use Magento\Payment\Gateway\Response\HandlerInterface;
 use Magento\Sales\Model\Order\Payment;
 use Magento\Customer\Api\CustomerRepositoryInterface;
@@ -46,7 +46,7 @@ class CustomerDataHandler implements HandlerInterface
 
             $transaction = $this->subjectReader->readTransaction($response);
 
-            // set customerId from Xpanse
+            // set customerId from cpanse
             $order = $paymentDO->getOrder();
 
             $customerId = $order->getCustomerId();
@@ -55,9 +55,9 @@ class CustomerDataHandler implements HandlerInterface
             if ($isLoginCustomer) {
                 try {
                     $customer = $this->customerRepository->getById($customerId);
-                    $customerXpanseId = $customer->getCustomAttribute('xpanse_payment_id') ?
+                    $customerxpanseId = $customer->getCustomAttribute('xpanse_payment_id') ?
                         $customer->getCustomAttribute('xpanse_payment_id')->getValue() : '';
-                    if (!$customerXpanseId && isset($transaction['customerId'])) {
+                    if (!$customerxpanseId && isset($transaction['customerId'])) {
                         $customer->setCustomAttribute('xpanse_payment_id', $transaction['customerId']);
                         $this->customerRepository->save($customer);
                     }

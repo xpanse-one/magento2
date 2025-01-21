@@ -4,7 +4,7 @@
  * See COPYING.txt for license details.
  */
 
-namespace Xpanse\Payment\Gateway\Http\Client;
+namespace xpanse\Payment\Gateway\Http\Client;
 
 use Magento\Payment\Gateway\Http\ClientException;
 use Magento\Payment\Gateway\Http\ClientInterface;
@@ -28,7 +28,7 @@ abstract class AbstractTransaction implements ClientInterface
     protected $customLogger;
 
     /**
-     * @var \Xpanse\Payment\Model\Adapter\XpanseAdapterFactory $adapterFactory
+     * @var \xpanse\Payment\Model\Adapter\xpanseAdapterFactory $adapterFactory
      */
     protected $adapterFactory;
 
@@ -41,7 +41,7 @@ abstract class AbstractTransaction implements ClientInterface
     public function __construct(
         LoggerInterface $logger,
         Logger $customLogger,
-        \Xpanse\Payment\Model\Adapter\XpanseAdapterFactory $adapterFactory
+        \xpanse\Payment\Model\Adapter\xpanseAdapterFactory $adapterFactory
     ) {
         $this->logger = $logger;
         $this->customLogger = $customLogger;

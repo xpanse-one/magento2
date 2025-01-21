@@ -1,295 +1,295 @@
 <?xml version="1.0"?>
 <config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:ObjectManager/etc/config.xsd">
-    <virtualType name="XpanseCardFacade" type="Magento\Payment\Model\Method\Adapter">
+    <virtualType name="xpanseCardFacade" type="Magento\Payment\Model\Method\Adapter">
         <arguments>
             <argument name="code" xsi:type="string">xpanse_card</argument>
             <argument name="formBlockType" xsi:type="string">Magento\Payment\Block\Form</argument>
-            <argument name="infoBlockType" xsi:type="string">Xpanse\Payment\Block\OrderTransactionInfo</argument>
-            <argument name="valueHandlerPool" xsi:type="object">XpansePaymentCardValueHandlerPool</argument>
-            <argument name="validatorPool" xsi:type="object">XpanseValidatorPool</argument>
-            <argument name="commandPool" xsi:type="object">XpanseCommandPool</argument>
+            <argument name="infoBlockType" xsi:type="string">xpanse\Payment\Block\OrderTransactionInfo</argument>
+            <argument name="valueHandlerPool" xsi:type="object">xpansePaymentCardValueHandlerPool</argument>
+            <argument name="validatorPool" xsi:type="object">xpanseValidatorPool</argument>
+            <argument name="commandPool" xsi:type="object">xpanseCommandPool</argument>
         </arguments>
     </virtualType>
-    <virtualType name="XpansePaypalFacade" type="Magento\Payment\Model\Method\Adapter">
+    <virtualType name="xpansePaypalFacade" type="Magento\Payment\Model\Method\Adapter">
         <arguments>
             <argument name="code" xsi:type="string">xpanse_paypal</argument>
             <argument name="formBlockType" xsi:type="string">Magento\Payment\Block\Form</argument>
-            <argument name="infoBlockType" xsi:type="string">Xpanse\Payment\Block\OrderTransactionInfo</argument>
-            <argument name="valueHandlerPool" xsi:type="object">XpansePaymentPaypalValueHandlerPool</argument>
-            <argument name="validatorPool" xsi:type="object">XpanseValidatorPool</argument>
-            <argument name="commandPool" xsi:type="object">XpanseCommandPool</argument>
+            <argument name="infoBlockType" xsi:type="string">xpanse\Payment\Block\OrderTransactionInfo</argument>
+            <argument name="valueHandlerPool" xsi:type="object">xpansePaymentPaypalValueHandlerPool</argument>
+            <argument name="validatorPool" xsi:type="object">xpanseValidatorPool</argument>
+            <argument name="commandPool" xsi:type="object">xpanseCommandPool</argument>
         </arguments>
     </virtualType>
-    <virtualType name="XpanseGooglePayFacade" type="Magento\Payment\Model\Method\Adapter">
+    <virtualType name="xpanseGooglePayFacade" type="Magento\Payment\Model\Method\Adapter">
         <arguments>
             <argument name="code" xsi:type="string">xpanse_googlepay</argument>
             <argument name="formBlockType" xsi:type="string">Magento\Payment\Block\Form</argument>
-            <argument name="infoBlockType" xsi:type="string">Xpanse\Payment\Block\OrderTransactionInfo</argument>
-            <argument name="valueHandlerPool" xsi:type="object">XpansePaymentGooglePayValueHandlerPool</argument>
-            <argument name="validatorPool" xsi:type="object">XpanseValidatorPool</argument>
-            <argument name="commandPool" xsi:type="object">XpanseCommandPool</argument>
+            <argument name="infoBlockType" xsi:type="string">xpanse\Payment\Block\OrderTransactionInfo</argument>
+            <argument name="valueHandlerPool" xsi:type="object">xpansePaymentGooglePayValueHandlerPool</argument>
+            <argument name="validatorPool" xsi:type="object">xpanseValidatorPool</argument>
+            <argument name="commandPool" xsi:type="object">xpanseCommandPool</argument>
         </arguments>
     </virtualType>
-    <virtualType name="XpanseApplePayFacade" type="Magento\Payment\Model\Method\Adapter">
+    <virtualType name="xpanseApplePayFacade" type="Magento\Payment\Model\Method\Adapter">
         <arguments>
             <argument name="code" xsi:type="string">xpanse_applepay</argument>
             <argument name="formBlockType" xsi:type="string">Magento\Payment\Block\Form</argument>
-            <argument name="infoBlockType" xsi:type="string">Xpanse\Payment\Block\OrderTransactionInfo</argument>
-            <argument name="valueHandlerPool" xsi:type="object">XpansePaymentApplePayValueHandlerPool</argument>
-            <argument name="validatorPool" xsi:type="object">XpanseValidatorPool</argument>
-            <argument name="commandPool" xsi:type="object">XpanseCommandPool</argument>
+            <argument name="infoBlockType" xsi:type="string">xpanse\Payment\Block\OrderTransactionInfo</argument>
+            <argument name="valueHandlerPool" xsi:type="object">xpansePaymentApplePayValueHandlerPool</argument>
+            <argument name="validatorPool" xsi:type="object">xpanseValidatorPool</argument>
+            <argument name="commandPool" xsi:type="object">xpanseCommandPool</argument>
         </arguments>
     </virtualType>
-    <virtualType name="XpanseCheckoutPayIdFacade" type="Magento\Payment\Model\Method\Adapter">
+    <virtualType name="xpanseCheckoutPayIdFacade" type="Magento\Payment\Model\Method\Adapter">
         <arguments>
             <argument name="code" xsi:type="string">xpanse_checkout_azupay</argument>
             <argument name="formBlockType" xsi:type="string">Magento\Payment\Block\Form</argument>
-            <argument name="infoBlockType" xsi:type="string">Xpanse\Payment\Block\OrderTransactionInfo</argument>
-            <argument name="valueHandlerPool" xsi:type="object">XpansePaymentCheckoutPayIdValueHandlerPool</argument>
-            <argument name="validatorPool" xsi:type="object">XpanseValidatorPool</argument>
-            <argument name="commandPool" xsi:type="object">XpanseCommandPool</argument>
+            <argument name="infoBlockType" xsi:type="string">xpanse\Payment\Block\OrderTransactionInfo</argument>
+            <argument name="valueHandlerPool" xsi:type="object">xpansePaymentCheckoutPayIdValueHandlerPool</argument>
+            <argument name="validatorPool" xsi:type="object">xpanseValidatorPool</argument>
+            <argument name="commandPool" xsi:type="object">xpanseCommandPool</argument>
         </arguments>
     </virtualType>
-    <virtualType name="XpanseCheckoutPayToFacade" type="Magento\Payment\Model\Method\Adapter">
+    <virtualType name="xpanseCheckoutPayToFacade" type="Magento\Payment\Model\Method\Adapter">
         <arguments>
             <argument name="code" xsi:type="string">xpanse_payto</argument>
             <argument name="formBlockType" xsi:type="string">Magento\Payment\Block\Form</argument>
-            <argument name="infoBlockType" xsi:type="string">Xpanse\Payment\Block\OrderTransactionInfo</argument>
-            <argument name="valueHandlerPool" xsi:type="object">XpansePaymentCheckoutPayToValueHandlerPool</argument>
-            <argument name="validatorPool" xsi:type="object">XpanseValidatorPool</argument>
-            <argument name="commandPool" xsi:type="object">XpanseCommandPool</argument>
+            <argument name="infoBlockType" xsi:type="string">xpanse\Payment\Block\OrderTransactionInfo</argument>
+            <argument name="valueHandlerPool" xsi:type="object">xpansePaymentCheckoutPayToValueHandlerPool</argument>
+            <argument name="validatorPool" xsi:type="object">xpanseValidatorPool</argument>
+            <argument name="commandPool" xsi:type="object">xpanseCommandPool</argument>
         </arguments>
     </virtualType>
-    <virtualType name="XpanseCheckoutShiftFacade" type="Magento\Payment\Model\Method\Adapter">
+    <virtualType name="xpanseCheckoutShiftFacade" type="Magento\Payment\Model\Method\Adapter">
         <arguments>
             <argument name="code" xsi:type="string">xpanse_checkout_shift</argument>
             <argument name="formBlockType" xsi:type="string">Magento\Payment\Block\Form</argument>
-            <argument name="infoBlockType" xsi:type="string">Xpanse\Payment\Block\OrderTransactionInfo</argument>
-            <argument name="valueHandlerPool" xsi:type="object">XpansePaymentCheckoutShiftValueHandlerPool</argument>
-            <argument name="validatorPool" xsi:type="object">XpanseValidatorPool</argument>
-            <argument name="commandPool" xsi:type="object">XpanseCommandPool</argument>
+            <argument name="infoBlockType" xsi:type="string">xpanse\Payment\Block\OrderTransactionInfo</argument>
+            <argument name="valueHandlerPool" xsi:type="object">xpansePaymentCheckoutShiftValueHandlerPool</argument>
+            <argument name="validatorPool" xsi:type="object">xpanseValidatorPool</argument>
+            <argument name="commandPool" xsi:type="object">xpanseCommandPool</argument>
         </arguments>
     </virtualType>
-    <virtualType name="XpanseCheckoutPayByAccountFacade" type="Magento\Payment\Model\Method\Adapter">
+    <virtualType name="xpanseCheckoutPayByAccountFacade" type="Magento\Payment\Model\Method\Adapter">
         <arguments>
             <argument name="code" xsi:type="string">xpanse_checkout_pay_by_account</argument>
             <argument name="formBlockType" xsi:type="string">Magento\Payment\Block\Form</argument>
-            <argument name="infoBlockType" xsi:type="string">Xpanse\Payment\Block\OrderTransactionInfo</argument>
-            <argument name="valueHandlerPool" xsi:type="object">XpansePaymentCheckoutPayByAccountValueHandlerPool</argument>
-            <argument name="validatorPool" xsi:type="object">XpanseValidatorPool</argument>
-            <argument name="commandPool" xsi:type="object">XpanseCommandPool</argument>
+            <argument name="infoBlockType" xsi:type="string">xpanse\Payment\Block\OrderTransactionInfo</argument>
+            <argument name="valueHandlerPool" xsi:type="object">xpansePaymentCheckoutPayByAccountValueHandlerPool</argument>
+            <argument name="validatorPool" xsi:type="object">xpanseValidatorPool</argument>
+            <argument name="commandPool" xsi:type="object">xpanseCommandPool</argument>
         </arguments>
     </virtualType>
-    <virtualType name="XpanseCheckoutUpiFacade" type="Magento\Payment\Model\Method\Adapter">
+    <virtualType name="xpanseCheckoutUpiFacade" type="Magento\Payment\Model\Method\Adapter">
         <arguments>
             <argument name="code" xsi:type="string">xpanse_checkout_upi</argument>
             <argument name="formBlockType" xsi:type="string">Magento\Payment\Block\Form</argument>
-            <argument name="infoBlockType" xsi:type="string">Xpanse\Payment\Block\OrderTransactionInfo</argument>
-            <argument name="valueHandlerPool" xsi:type="object">XpansePaymentCheckoutUpiValueHandlerPool</argument>
-            <argument name="validatorPool" xsi:type="object">XpanseValidatorPool</argument>
-            <argument name="commandPool" xsi:type="object">XpanseCommandPool</argument>
+            <argument name="infoBlockType" xsi:type="string">xpanse\Payment\Block\OrderTransactionInfo</argument>
+            <argument name="valueHandlerPool" xsi:type="object">xpansePaymentCheckoutUpiValueHandlerPool</argument>
+            <argument name="validatorPool" xsi:type="object">xpanseValidatorPool</argument>
+            <argument name="commandPool" xsi:type="object">xpanseCommandPool</argument>
         </arguments>
     </virtualType>
 
-    <!-- Virtual type for XpanseValueHandlerPool  -->
-    <virtualType name="XpansePaymentCardValueHandlerPool" type="Magento\Payment\Gateway\Config\ValueHandlerPool">
+    <!-- Virtual type for xpanseValueHandlerPool  -->
+    <virtualType name="xpansePaymentCardValueHandlerPool" type="Magento\Payment\Gateway\Config\ValueHandlerPool">
         <arguments>
             <argument name="handlers" xsi:type="array">
-                <item name="default" xsi:type="string">XpansePaymentCardConfigValueHandler</item>
+                <item name="default" xsi:type="string">xpansePaymentCardConfigValueHandler</item>
             </argument>
         </arguments>
     </virtualType>
-    <virtualType name="XpansePaymentCardConfigValueHandler" type="Magento\Payment\Gateway\Config\ConfigValueHandler">
+    <virtualType name="xpansePaymentCardConfigValueHandler" type="Magento\Payment\Gateway\Config\ConfigValueHandler">
         <arguments>
-            <argument name="configInterface" xsi:type="object">XpansePaymentCardConfig</argument>
+            <argument name="configInterface" xsi:type="object">xpansePaymentCardConfig</argument>
         </arguments>
     </virtualType>
-    <virtualType name="XpansePaymentCardConfig" type="Magento\Payment\Gateway\Config\Config">
+    <virtualType name="xpansePaymentCardConfig" type="Magento\Payment\Gateway\Config\Config">
         <arguments>
             <argument name="methodCode" xsi:type="string">xpanse_card</argument>
         </arguments>
     </virtualType>
 
-    <virtualType name="XpansePaymentPaypalValueHandlerPool" type="Magento\Payment\Gateway\Config\ValueHandlerPool">
+    <virtualType name="xpansePaymentPaypalValueHandlerPool" type="Magento\Payment\Gateway\Config\ValueHandlerPool">
         <arguments>
             <argument name="handlers" xsi:type="array">
-                <item name="default" xsi:type="string">XpansePaymentPaypalConfigValueHandler</item>
+                <item name="default" xsi:type="string">xpansePaymentPaypalConfigValueHandler</item>
             </argument>
         </arguments>
     </virtualType>
-    <virtualType name="XpansePaymentPaypalConfigValueHandler" type="Magento\Payment\Gateway\Config\ConfigValueHandler">
+    <virtualType name="xpansePaymentPaypalConfigValueHandler" type="Magento\Payment\Gateway\Config\ConfigValueHandler">
         <arguments>
-            <argument name="configInterface" xsi:type="object">XpansePaymentPaypalConfig</argument>
+            <argument name="configInterface" xsi:type="object">xpansePaymentPaypalConfig</argument>
         </arguments>
     </virtualType>
-    <virtualType name="XpansePaymentPaypalConfig" type="Magento\Payment\Gateway\Config\Config">
+    <virtualType name="xpansePaymentPaypalConfig" type="Magento\Payment\Gateway\Config\Config">
         <arguments>
             <argument name="methodCode" xsi:type="string">xpanse_paypal</argument>
         </arguments>
     </virtualType>
 
-    <virtualType name="XpansePaymentGooglePayValueHandlerPool" type="Magento\Payment\Gateway\Config\ValueHandlerPool">
+    <virtualType name="xpansePaymentGooglePayValueHandlerPool" type="Magento\Payment\Gateway\Config\ValueHandlerPool">
         <arguments>
             <argument name="handlers" xsi:type="array">
-                <item name="default" xsi:type="string">XpansePaymentGooglePayConfigValueHandler</item>
+                <item name="default" xsi:type="string">xpansePaymentGooglePayConfigValueHandler</item>
             </argument>
         </arguments>
     </virtualType>
-    <virtualType name="XpansePaymentGooglePayConfigValueHandler" type="Magento\Payment\Gateway\Config\ConfigValueHandler">
+    <virtualType name="xpansePaymentGooglePayConfigValueHandler" type="Magento\Payment\Gateway\Config\ConfigValueHandler">
         <arguments>
-            <argument name="configInterface" xsi:type="object">XpansePaymentGooglePayConfig</argument>
+            <argument name="configInterface" xsi:type="object">xpansePaymentGooglePayConfig</argument>
         </arguments>
     </virtualType>
-    <virtualType name="XpansePaymentGooglePayConfig" type="Magento\Payment\Gateway\Config\Config">
+    <virtualType name="xpansePaymentGooglePayConfig" type="Magento\Payment\Gateway\Config\Config">
         <arguments>
             <argument name="methodCode" xsi:type="string">xpanse_googlepay</argument>
         </arguments>
     </virtualType>
 
-    <virtualType name="XpansePaymentApplePayValueHandlerPool" type="Magento\Payment\Gateway\Config\ValueHandlerPool">
+    <virtualType name="xpansePaymentApplePayValueHandlerPool" type="Magento\Payment\Gateway\Config\ValueHandlerPool">
         <arguments>
             <argument name="handlers" xsi:type="array">
-                <item name="default" xsi:type="string">XpansePaymentApplePayConfigValueHandler</item>
+                <item name="default" xsi:type="string">xpansePaymentApplePayConfigValueHandler</item>
             </argument>
         </arguments>
     </virtualType>
-    <virtualType name="XpansePaymentApplePayConfigValueHandler" type="Magento\Payment\Gateway\Config\ConfigValueHandler">
+    <virtualType name="xpansePaymentApplePayConfigValueHandler" type="Magento\Payment\Gateway\Config\ConfigValueHandler">
         <arguments>
-            <argument name="configInterface" xsi:type="object">XpansePaymentApplePayConfig</argument>
+            <argument name="configInterface" xsi:type="object">xpansePaymentApplePayConfig</argument>
         </arguments>
     </virtualType>
-    <virtualType name="XpansePaymentApplePayConfig" type="Magento\Payment\Gateway\Config\Config">
+    <virtualType name="xpansePaymentApplePayConfig" type="Magento\Payment\Gateway\Config\Config">
         <arguments>
             <argument name="methodCode" xsi:type="string">xpanse_applepay</argument>
         </arguments>
     </virtualType>
 
-    <virtualType name="XpansePaymentCheckoutPayIdValueHandlerPool" type="Magento\Payment\Gateway\Config\ValueHandlerPool">
+    <virtualType name="xpansePaymentCheckoutPayIdValueHandlerPool" type="Magento\Payment\Gateway\Config\ValueHandlerPool">
         <arguments>
             <argument name="handlers" xsi:type="array">
-                <item name="default" xsi:type="string">XpansePaymentCheckoutPayIdConfigValueHandler</item>
+                <item name="default" xsi:type="string">xpansePaymentCheckoutPayIdConfigValueHandler</item>
             </argument>
         </arguments>
     </virtualType>
-    <virtualType name="XpansePaymentCheckoutPayIdConfigValueHandler" type="Magento\Payment\Gateway\Config\ConfigValueHandler">
+    <virtualType name="xpansePaymentCheckoutPayIdConfigValueHandler" type="Magento\Payment\Gateway\Config\ConfigValueHandler">
         <arguments>
-            <argument name="configInterface" xsi:type="object">XpansePaymentCheckoutPayIdConfig</argument>
+            <argument name="configInterface" xsi:type="object">xpansePaymentCheckoutPayIdConfig</argument>
         </arguments>
     </virtualType>
-    <virtualType name="XpansePaymentCheckoutPayIdConfig" type="Magento\Payment\Gateway\Config\Config">
+    <virtualType name="xpansePaymentCheckoutPayIdConfig" type="Magento\Payment\Gateway\Config\Config">
         <arguments>
             <argument name="methodCode" xsi:type="string">xpanse_checkout_azupay</argument>
         </arguments>
     </virtualType>
 
-    <virtualType name="XpansePaymentCheckoutPayToValueHandlerPool" type="Magento\Payment\Gateway\Config\ValueHandlerPool">
+    <virtualType name="xpansePaymentCheckoutPayToValueHandlerPool" type="Magento\Payment\Gateway\Config\ValueHandlerPool">
         <arguments>
             <argument name="handlers" xsi:type="array">
-                <item name="default" xsi:type="string">XpansePaymentCheckoutPayToConfigValueHandler</item>
+                <item name="default" xsi:type="string">xpansePaymentCheckoutPayToConfigValueHandler</item>
             </argument>
         </arguments>
     </virtualType>
-    <virtualType name="XpansePaymentCheckoutPayToConfigValueHandler" type="Magento\Payment\Gateway\Config\ConfigValueHandler">
+    <virtualType name="xpansePaymentCheckoutPayToConfigValueHandler" type="Magento\Payment\Gateway\Config\ConfigValueHandler">
         <arguments>
-            <argument name="configInterface" xsi:type="object">XpansePaymentCheckoutPayToConfig</argument>
+            <argument name="configInterface" xsi:type="object">xpansePaymentCheckoutPayToConfig</argument>
         </arguments>
     </virtualType>
-    <virtualType name="XpansePaymentCheckoutPayToConfig" type="Magento\Payment\Gateway\Config\Config">
+    <virtualType name="xpansePaymentCheckoutPayToConfig" type="Magento\Payment\Gateway\Config\Config">
         <arguments>
             <argument name="methodCode" xsi:type="string">xpanse_payto</argument>
         </arguments>
     </virtualType>
 
-    <virtualType name="XpansePaymentCheckoutShiftValueHandlerPool" type="Magento\Payment\Gateway\Config\ValueHandlerPool">
+    <virtualType name="xpansePaymentCheckoutShiftValueHandlerPool" type="Magento\Payment\Gateway\Config\ValueHandlerPool">
         <arguments>
             <argument name="handlers" xsi:type="array">
-                <item name="default" xsi:type="string">XpansePaymentCheckoutShiftConfigValueHandler</item>
+                <item name="default" xsi:type="string">xpansePaymentCheckoutShiftConfigValueHandler</item>
             </argument>
         </arguments>
     </virtualType>
-    <virtualType name="XpansePaymentCheckoutShiftConfigValueHandler" type="Magento\Payment\Gateway\Config\ConfigValueHandler">
+    <virtualType name="xpansePaymentCheckoutShiftConfigValueHandler" type="Magento\Payment\Gateway\Config\ConfigValueHandler">
         <arguments>
-            <argument name="configInterface" xsi:type="object">XpansePaymentCheckoutShiftConfig</argument>
+            <argument name="configInterface" xsi:type="object">xpansePaymentCheckoutShiftConfig</argument>
         </arguments>
     </virtualType>
-    <virtualType name="XpansePaymentCheckoutShiftConfig" type="Magento\Payment\Gateway\Config\Config">
+    <virtualType name="xpansePaymentCheckoutShiftConfig" type="Magento\Payment\Gateway\Config\Config">
         <arguments>
             <argument name="methodCode" xsi:type="string">xpanse_checkout_shift</argument>
         </arguments>
     </virtualType>
 
-    <virtualType name="XpansePaymentCheckoutPayByAccountValueHandlerPool" type="Magento\Payment\Gateway\Config\ValueHandlerPool">
+    <virtualType name="xpansePaymentCheckoutPayByAccountValueHandlerPool" type="Magento\Payment\Gateway\Config\ValueHandlerPool">
         <arguments>
             <argument name="handlers" xsi:type="array">
-                <item name="default" xsi:type="string">XpansePaymentCheckoutPayByAccountConfigValueHandler</item>
+                <item name="default" xsi:type="string">xpansePaymentCheckoutPayByAccountConfigValueHandler</item>
             </argument>
         </arguments>
     </virtualType>
-    <virtualType name="XpansePaymentCheckoutPayByAccountConfigValueHandler" type="Magento\Payment\Gateway\Config\ConfigValueHandler">
+    <virtualType name="xpansePaymentCheckoutPayByAccountConfigValueHandler" type="Magento\Payment\Gateway\Config\ConfigValueHandler">
         <arguments>
-            <argument name="configInterface" xsi:type="object">XpansePaymentCheckoutPayByAccountConfig</argument>
+            <argument name="configInterface" xsi:type="object">xpansePaymentCheckoutPayByAccountConfig</argument>
         </arguments>
     </virtualType>
-    <virtualType name="XpansePaymentCheckoutPayByAccountConfig" type="Magento\Payment\Gateway\Config\Config">
+    <virtualType name="xpansePaymentCheckoutPayByAccountConfig" type="Magento\Payment\Gateway\Config\Config">
         <arguments>
             <argument name="methodCode" xsi:type="string">xpanse_checkout_pay_by_account</argument>
         </arguments>
     </virtualType>
 
-    <virtualType name="XpansePaymentCheckoutUpiValueHandlerPool" type="Magento\Payment\Gateway\Config\ValueHandlerPool">
+    <virtualType name="xpansePaymentCheckoutUpiValueHandlerPool" type="Magento\Payment\Gateway\Config\ValueHandlerPool">
         <arguments>
             <argument name="handlers" xsi:type="array">
-                <item name="default" xsi:type="string">XpansePaymentCheckoutUpiConfigValueHandler</item>
+                <item name="default" xsi:type="string">xpansePaymentCheckoutUpiConfigValueHandler</item>
             </argument>
         </arguments>
     </virtualType>
-    <virtualType name="XpansePaymentCheckoutUpiConfigValueHandler" type="Magento\Payment\Gateway\Config\ConfigValueHandler">
+    <virtualType name="xpansePaymentCheckoutUpiConfigValueHandler" type="Magento\Payment\Gateway\Config\ConfigValueHandler">
         <arguments>
-            <argument name="configInterface" xsi:type="object">XpansePaymentCheckoutUpiConfig</argument>
+            <argument name="configInterface" xsi:type="object">xpansePaymentCheckoutUpiConfig</argument>
         </arguments>
     </virtualType>
-    <virtualType name="XpansePaymentCheckoutUpiConfig" type="Magento\Payment\Gateway\Config\Config">
+    <virtualType name="xpansePaymentCheckoutUpiConfig" type="Magento\Payment\Gateway\Config\Config">
         <arguments>
             <argument name="methodCode" xsi:type="string">xpanse_checkout_upi</argument>
         </arguments>
     </virtualType>
 
-    <!-- End virtual type for XpanseValueHandlerPool  -->
+    <!-- End virtual type for xpanseValueHandlerPool  -->
 
-    <virtualType name="XpanseValidatorPool" type="Magento\Payment\Gateway\Validator\ValidatorPool">
+    <virtualType name="xpanseValidatorPool" type="Magento\Payment\Gateway\Validator\ValidatorPool">
         <arguments>
             <argument name="validators" xsi:type="array">
-                <item name="basic" xsi:type="string">Xpanse\Payment\Gateway\Validator\BasicValidator</item>
+                <item name="basic" xsi:type="string">xpanse\Payment\Gateway\Validator\BasicValidator</item>
             </argument>
         </arguments>
     </virtualType>
 
-    <virtualType name="XpanseCommandPool" type="Magento\Payment\Gateway\Command\CommandPool">
+    <virtualType name="xpanseCommandPool" type="Magento\Payment\Gateway\Command\CommandPool">
         <arguments>
             <argument name="commands" xsi:type="array">
-                <item name="capture" xsi:type="string">XpanseCaptureCommand</item>
-                <item name="refund" xsi:type="string">XpanseRefundCommand</item>
+                <item name="capture" xsi:type="string">xpanseCaptureCommand</item>
+                <item name="refund" xsi:type="string">xpanseRefundCommand</item>
             </argument>
         </arguments>
     </virtualType>
 
-    <virtualType name="XpanseCaptureCommand" type="Magento\Payment\Gateway\Command\GatewayCommand">
+    <virtualType name="xpanseCaptureCommand" type="Magento\Payment\Gateway\Command\GatewayCommand">
         <arguments>
-            <argument name="requestBuilder" xsi:type="object">XpanseCaptureRequest</argument>
-            <argument name="transferFactory" xsi:type="object">Xpanse\Payment\Gateway\Http\TransferFactory</argument>
-            <argument name="client" xsi:type="object">Xpanse\Payment\Gateway\Http\Client\TransactionCapture</argument>
+            <argument name="requestBuilder" xsi:type="object">xpanseCaptureRequest</argument>
+            <argument name="transferFactory" xsi:type="object">xpanse\Payment\Gateway\Http\TransferFactory</argument>
+            <argument name="client" xsi:type="object">xpanse\Payment\Gateway\Http\Client\TransactionCapture</argument>
             <argument name="handler" xsi:type="object">PaufurlCaptureHandler</argument>
-            <argument name="validator" xsi:type="object">Xpanse\Payment\Gateway\Validator\GeneralResponseValidator</argument>
-            <argument name="errorMessageMapper" xsi:type="object">Xpanse\Payment\Gateway\ErrorMapper\VirtualErrorMessageMapper</argument>
+            <argument name="validator" xsi:type="object">xpanse\Payment\Gateway\Validator\GeneralResponseValidator</argument>
+            <argument name="errorMessageMapper" xsi:type="object">xpanse\Payment\Gateway\ErrorMapper\VirtualErrorMessageMapper</argument>
         </arguments>
     </virtualType>
 
-    <virtualType name="XpanseCaptureRequest" type="Magento\Payment\Gateway\Request\BuilderComposite">
+    <virtualType name="xpanseCaptureRequest" type="Magento\Payment\Gateway\Request\BuilderComposite">
         <arguments>
             <argument name="builders" xsi:type="array">
-                <item name="customer" xsi:type="string">Xpanse\Payment\Gateway\Request\CustomerDataBuilder</item>
-                <item name="payment" xsi:type="string">Xpanse\Payment\Gateway\Request\PaymentDataBuilder</item>
-                <item name="order" xsi:type="string">Xpanse\Payment\Gateway\Request\OrderDataBuilder</item>
+                <item name="customer" xsi:type="string">xpanse\Payment\Gateway\Request\CustomerDataBuilder</item>
+                <item name="payment" xsi:type="string">xpanse\Payment\Gateway\Request\PaymentDataBuilder</item>
+                <item name="order" xsi:type="string">xpanse\Payment\Gateway\Request\OrderDataBuilder</item>
             </argument>
         </arguments>
     </virtualType>
@@ -297,29 +297,29 @@
     <virtualType name="PaufurlCaptureHandler" type="Magento\Payment\Gateway\Response\HandlerChain">
         <arguments>
             <argument name="handlers" xsi:type="array">
-                <item name="payment_details" xsi:type="string">Xpanse\Payment\Gateway\Response\PaymentDataHandler</item>
-                <item name="txn_id" xsi:type="string">Xpanse\Payment\Gateway\Response\TransactionDataHandler</item>
-                <item name="additional_data" xsi:type="string">Xpanse\Payment\Gateway\Response\AdditionalDataHandler</item>
-                <item name="xpanse_customer_id" xsi:type="string">Xpanse\Payment\Gateway\Response\CustomerDataHandler</item>
+                <item name="payment_details" xsi:type="string">xpanse\Payment\Gateway\Response\PaymentDataHandler</item>
+                <item name="txn_id" xsi:type="string">xpanse\Payment\Gateway\Response\TransactionDataHandler</item>
+                <item name="additional_data" xsi:type="string">xpanse\Payment\Gateway\Response\AdditionalDataHandler</item>
+                <item name="xpanse_customer_id" xsi:type="string">xpanse\Payment\Gateway\Response\CustomerDataHandler</item>
             </argument>
         </arguments>
     </virtualType>
 
-    <virtualType name="XpanseRefundCommand" type="Magento\Payment\Gateway\Command\GatewayCommand">
+    <virtualType name="xpanseRefundCommand" type="Magento\Payment\Gateway\Command\GatewayCommand">
         <arguments>
-            <argument name="requestBuilder" xsi:type="object">XpanseRefundRequest</argument>
-            <argument name="transferFactory" xsi:type="object">Xpanse\Payment\Gateway\Http\TransferFactory</argument>
-            <argument name="client" xsi:type="object">Xpanse\Payment\Gateway\Http\Client\TransactionRefund</argument>
+            <argument name="requestBuilder" xsi:type="object">xpanseRefundRequest</argument>
+            <argument name="transferFactory" xsi:type="object">xpanse\Payment\Gateway\Http\TransferFactory</argument>
+            <argument name="client" xsi:type="object">xpanse\Payment\Gateway\Http\Client\TransactionRefund</argument>
             <argument name="handler" xsi:type="object">PaufurlRefundHandler</argument>
-            <argument name="validator" xsi:type="object">Xpanse\Payment\Gateway\Validator\GeneralResponseValidator</argument>
-            <argument name="errorMessageMapper" xsi:type="object">Xpanse\Payment\Gateway\ErrorMapper\VirtualErrorMessageMapper</argument>
+            <argument name="validator" xsi:type="object">xpanse\Payment\Gateway\Validator\GeneralResponseValidator</argument>
+            <argument name="errorMessageMapper" xsi:type="object">xpanse\Payment\Gateway\ErrorMapper\VirtualErrorMessageMapper</argument>
         </arguments>
     </virtualType>
 
-    <virtualType name="XpanseRefundRequest" type="Magento\Payment\Gateway\Request\BuilderComposite">
+    <virtualType name="xpanseRefundRequest" type="Magento\Payment\Gateway\Request\BuilderComposite">
         <arguments>
             <argument name="builders" xsi:type="array">
-                <item name="refundData" xsi:type="string">Xpanse\Payment\Gateway\Request\RefundDataBuilder</item>
+                <item name="refundData" xsi:type="string">xpanse\Payment\Gateway\Request\RefundDataBuilder</item>
             </argument>
         </arguments>
     </virtualType>
@@ -327,75 +327,75 @@
     <virtualType name="PaufurlRefundHandler" type="Magento\Payment\Gateway\Response\HandlerChain">
         <arguments>
             <argument name="handlers" xsi:type="array">
-                <item name="refund_transaction_details" xsi:type="string">Xpanse\Payment\Gateway\Response\RefundHandler</item>
+                <item name="refund_transaction_details" xsi:type="string">xpanse\Payment\Gateway\Response\RefundHandler</item>
                 <item name="refund_additional_data" xsi:type="string">RefundAdditionalDataHandler</item>
             </argument>
         </arguments>
     </virtualType>
 
-    <virtualType name="RefundAdditionalDataHandler" type="Xpanse\Payment\Gateway\Response\AdditionalDataHandler">
+    <virtualType name="RefundAdditionalDataHandler" type="xpanse\Payment\Gateway\Response\AdditionalDataHandler">
         <arguments>
             <argument name="transactionType" xsi:type="string">refund</argument>
         </arguments>
     </virtualType>
 
-    <type name="Xpanse\Payment\Gateway\Http\Client\TransactionCapture">
+    <type name="xpanse\Payment\Gateway\Http\Client\TransactionCapture">
         <arguments>
-            <argument name="customLogger" xsi:type="object">XpanseLogger</argument>
+            <argument name="customLogger" xsi:type="object">xpanseLogger</argument>
         </arguments>
     </type>
-    <type name="Xpanse\Payment\Gateway\Http\Client\TransactionRefund">
+    <type name="xpanse\Payment\Gateway\Http\Client\TransactionRefund">
         <arguments>
-            <argument name="customLogger" xsi:type="object">XpanseLogger</argument>
+            <argument name="customLogger" xsi:type="object">xpanseLogger</argument>
         </arguments>
     </type>
-    <type name="Xpanse\Payment\Gateway\Request\PaymentDataBuilder">
+    <type name="xpanse\Payment\Gateway\Request\PaymentDataBuilder">
         <arguments>
-            <argument name="customLogger" xsi:type="object">XpanseLogger</argument>
+            <argument name="customLogger" xsi:type="object">xpanseLogger</argument>
         </arguments>
     </type>
 
-    <!-- Logger, initialized with XpanseConfig -->
-    <virtualType name="XpanseLogger" type="Magento\Payment\Model\Method\Logger">
+    <!-- Logger, initialized with xpanseConfig -->
+    <virtualType name="xpanseLogger" type="Magento\Payment\Model\Method\Logger">
         <arguments>
-            <argument name="config" xsi:type="object">Xpanse\Payment\Model\Config</argument>
-            <argument name="logger" xsi:type="object">XpanseVirtualLogger</argument>
+            <argument name="config" xsi:type="object">xpanse\Payment\Model\Config</argument>
+            <argument name="logger" xsi:type="object">xpanseVirtualLogger</argument>
         </arguments>
     </virtualType>
 
-    <type name="Xpanse\Payment\Model\Config">
+    <type name="xpanse\Payment\Model\Config">
         <arguments>
-            <argument name="methodCode" xsi:type="const">Xpanse\Payment\Model\Ui\ConfigProvider::CODE</argument>
+            <argument name="methodCode" xsi:type="const">xpanse\Payment\Model\Ui\ConfigProvider::CODE</argument>
         </arguments>
     </type>
 
-    <virtualType name="XpanseVirtualDebug" type="Magento\Framework\Logger\Handler\Base">
+    <virtualType name="xpanseVirtualDebug" type="Magento\Framework\Logger\Handler\Base">
         <arguments>
             <argument name="fileName" xsi:type="string">/var/log/xpanse.log</argument>
         </arguments>
     </virtualType>
-    <virtualType name="XpanseVirtualLogger" type="Magento\Framework\Logger\Monolog">
+    <virtualType name="xpanseVirtualLogger" type="Magento\Framework\Logger\Monolog">
         <arguments>
             <argument name="handlers" xsi:type="array">
-                <item name="debug" xsi:type="object">XpanseVirtualDebug</item>
+                <item name="debug" xsi:type="object">xpanseVirtualDebug</item>
             </argument>
         </arguments>
     </virtualType>
     <!--End virtual type for logger-->
 
     <!-- Virtual type for errorMessageMapper  -->
-    <virtualType name="Xpanse\Payment\Gateway\ErrorMapper\VirtualErrorMessageMapper" type="Magento\Payment\Gateway\ErrorMapper\ErrorMessageMapper">
+    <virtualType name="xpanse\Payment\Gateway\ErrorMapper\VirtualErrorMessageMapper" type="Magento\Payment\Gateway\ErrorMapper\ErrorMessageMapper">
         <arguments>
-            <argument name="messageMapping" xsi:type="object">Xpanse\Payment\Gateway\ErrorMapper\VirtualMappingData</argument>
+            <argument name="messageMapping" xsi:type="object">xpanse\Payment\Gateway\ErrorMapper\VirtualMappingData</argument>
         </arguments>
     </virtualType>
-    <virtualType name="Xpanse\Payment\Gateway\ErrorMapper\VirtualMappingData" type="Magento\Payment\Gateway\ErrorMapper\MappingData">
+    <virtualType name="xpanse\Payment\Gateway\ErrorMapper\VirtualMappingData" type="Magento\Payment\Gateway\ErrorMapper\MappingData">
         <arguments>
-            <argument name="reader" xsi:type="object">Xpanse\Payment\Gateway\ErrorMapper\VirtualConfigReader</argument>
+            <argument name="reader" xsi:type="object">xpanse\Payment\Gateway\ErrorMapper\VirtualConfigReader</argument>
             <argument name="cacheId" xsi:type="string">xpanse_error_mapper</argument>
         </arguments>
     </virtualType>
-    <virtualType name="Xpanse\Payment\Gateway\ErrorMapper\VirtualConfigReader" type="Magento\Payment\Gateway\ErrorMapper\VirtualConfigReader">
+    <virtualType name="xpanse\Payment\Gateway\ErrorMapper\VirtualConfigReader" type="Magento\Payment\Gateway\ErrorMapper\VirtualConfigReader">
         <arguments>
             <!-- etc/xpanse_error_mapping.xml  -->
             <argument name="fileName" xsi:type="string">xpanse_error_mapping.xml</argument>
@@ -403,5 +403,5 @@
     </virtualType>
     <!-- End virtual type for errorMessageMapper  -->
 
-    <preference for="Magento\Payment\Gateway\Data\Order\OrderAdapter" type="Xpanse\Payment\Gateway\Data\OrderAdapter"/>
+    <preference for="Magento\Payment\Gateway\Data\Order\OrderAdapter" type="xpanse\Payment\Gateway\Data\OrderAdapter"/>
 </config>

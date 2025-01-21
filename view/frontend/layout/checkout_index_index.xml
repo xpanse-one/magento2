@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
     <head>
-        <css src="Xpanse_Payment::css/xpanse.css"/>
+        <css src="xpanse_Payment::css/xpanse.css"/>
     </head>
     <body>
         <referenceBlock name="checkout.root">
@@ -21,7 +21,7 @@
                                                             <!-- merge payment method renders here -->
                                                             <item name="children" xsi:type="array">
                                                                 <item name="xpanse_payment" xsi:type="array">
-                                                                    <item name="component" xsi:type="string">Xpanse_Payment/js/view/payment/xpanse-renderer</item>
+                                                                    <item name="component" xsi:type="string">xpanse_Payment/js/view/payment/xpanse-renderer</item>
                                                                     <item name="methods" xsi:type="array">
                                                                         <item name="xpanse_card" xsi:type="array">
                                                                             <item name="isBillingAddressRequired" xsi:type="boolean">true</item>

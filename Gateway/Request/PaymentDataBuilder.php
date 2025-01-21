@@ -3,9 +3,9 @@
  * Copyright © Magento, Inc. All rights reserved.
  * See COPYING.txt for license details.
  */
-namespace Xpanse\Payment\Gateway\Request;
+namespace xpanse\Payment\Gateway\Request;
 
-use Xpanse\Payment\Gateway\SubjectReader;
+use xpanse\Payment\Gateway\SubjectReader;
 use Magento\Payment\Gateway\Request\BuilderInterface;
 use Magento\Payment\Helper\Formatter;
 
@@ -53,7 +53,7 @@ class PaymentDataBuilder implements BuilderInterface
     {
         $paymentDO = $this->subjectReader->readPayment($buildSubject);
 
-        /** @var \Xpanse\Payment\Gateway\Data\OrderAdapter $order */
+        /** @var \xpanse\Payment\Gateway\Data\OrderAdapter $order */
         $order = $paymentDO->getOrder();
 
         $payment = $paymentDO->getPayment();

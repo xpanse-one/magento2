@@ -11,7 +11,7 @@ use Magento\Customer\Setup\CustomerSetupFactory;
 use Magento\Framework\Setup\ModuleDataSetupInterface;
 use Magento\Framework\Setup\Patch\DataPatchInterface;
 
-class AddxpansePaymentId implements DataPatchInterface
+class AddXpansePaymentId implements DataPatchInterface
 {
 
     /**

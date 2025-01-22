@@ -6,7 +6,7 @@ use Magento\Checkout\Model\ConfigProviderInterface;
 use xpanse\Payment\Model\xpanse;
 use xpanse\Payment\Model\Config;
 use Magento\Checkout\Model\Session as CheckoutSession;
-use xpanse\Payment\Model\Adapter\xpanseAdapter;
+use xpanse\Payment\Model\Adapter\XpanseAdapter;
 
 /**
  * Class ConfigProvider

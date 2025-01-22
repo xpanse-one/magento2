@@ -7,11 +7,11 @@ define(
     'xpanse_Payment/js/model/xpanse',
     'xpanse_Payment/js/model/xpanse-configuration',
   ],
-  function (ko, $, xayfurlBaseMethod, quote, xpanse, xpanseConfig) {
+  function (ko, $, xpanseBaseMethod, quote, xpanse, xpanseConfig) {
     'use strict';
 
     window._quote = quote;
-    return xayfurlBaseMethod.extend({
+    return xpanseBaseMethod.extend({
       self: this,
       defaults: {
         template: 'xpanse_Payment/payment/xpanse-checkout-form',

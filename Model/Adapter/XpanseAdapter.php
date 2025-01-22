@@ -113,9 +113,9 @@ class xpanseAdapter
     {
         try {
             if ($customerxpanseId) {
-                return $this->chargeForExistxpanseCustomer($data, $customerxpanseId);
+                return $this->chargeForExistXpanseCustomer($data, $customerxpanseId);
             } else {
-                return $this->chargeForNewxpanseCustomer($data);
+                return $this->chargeForNewXpanseCustomer($data);
             }
         } catch (xpanseSDK\ResponseException $exception) {
             return [
@@ -139,7 +139,7 @@ class xpanseAdapter
         }
     }
 
-    protected function chargeForExistxpanseCustomer($data, $customerxpanseId)
+    protected function chargeForExistXpanseCustomer($data, $customerxpanseId)
     {
         $customerSdk = new xpanseSDK\Customer();
         $chargeSdk = new xpanseSDK\Charge();
@@ -156,7 +156,7 @@ class xpanseAdapter
         }
     }
 
-    protected function chargeForNewxpanseCustomer($data)
+    protected function chargeForNewXpanseCustomer($data)
     {
         $chargeSdk = new xpanseSDK\Charge();
 

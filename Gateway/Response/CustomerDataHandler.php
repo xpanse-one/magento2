@@ -46,7 +46,7 @@ class CustomerDataHandler implements HandlerInterface
 
             $transaction = $this->subjectReader->readTransaction($response);
 
-            // set customerId from cpanse
+            // set customerId from xpanse
             $order = $paymentDO->getOrder();
 
             $customerId = $order->getCustomerId();

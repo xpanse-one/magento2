@@ -20,7 +20,7 @@ class TransactionCapture extends AbstractTransaction
             $result = $this->adapterFactory->create()->getTransactionInfo($data);
         } elseif (isset($data["Token"])) {
             if (!empty($data['loginCustomer'])) {
-                // this method will respond customerId from cpanse
+                // this method will respond customerId from xpanse
                 $result = $this->adapterFactory->create()->chargeByCustomerToken($data, $data['customerxpanseId']);
             } else {
                 // guest checkout

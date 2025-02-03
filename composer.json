@@ -1,7 +1,7 @@
 {
   "name": "xpanse/module-payment",
   "type": "magento2-module",
-  "version": "1.0.7",
+  "version": "1.0.8",
   "license": "proprietary",
   "authors": [
     {

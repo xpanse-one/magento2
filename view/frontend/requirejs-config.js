@@ -6,7 +6,7 @@
 let config = {
   map: {
     '*': {
-      'xpansejs': 'https://assets.xpanse.com/v4.6.22/js/xpanse.js',
+      'xpansejs': 'https://assets.xpanse.one/v4.6.22/js/xpanse.js',
     },
   },
 };

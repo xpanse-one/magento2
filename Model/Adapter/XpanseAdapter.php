@@ -8,10 +8,10 @@ namespace xpanse\Payment\Model\Adapter;
 use xpanse\Sdk as xpanseSDK;
 
 /**
- * Class XpanseAdapter
+ * Class xpanseAdapter
  * @codeCoverageIgnore
  */
-class XpanseAdapter
+class xpanseAdapter
 {
     /**
      * @var \xpanse\Payment\Model\Config
